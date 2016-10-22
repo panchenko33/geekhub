@@ -3,10 +3,47 @@ package homework;
 import java.util.Scanner;
 
 public class example {
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        System.out.print("enter telephone number +38093");
-        int i = sc.nextInt();
-        System.out.println("your number is: +380" + i);
+    public static void main(String[] args) {
+        int i, a = 0, b = 0, c = 0;
+        Scanner scn = new Scanner(System.in);
+        System.out.print("enter telephone number +380");
+
+        if (scn.hasNextInt()) {
+            i = scn.nextInt();
+
+            if (i > 999999999)System.out.println("number is too long");
+
+            while (i != 0) {
+                b = b + i % 10;
+                i = i / 10;
+            }
+            if (b == 1) System.out.println("summ = one");
+            if (b == 2) System.out.println("summ = two");
+            if (b == 3) System.out.println("summ = three");
+            if ( 10 > b && b > 3 ) System.out.println("summ1 = " + b);
+
+            if (b >= 10) {
+                System.out.println("summ1 = " + b);
+                while (b != 0) {
+                    a = a + b % 10;
+                    b = b / 10;
+                }
+                System.out.println("summ2 = " + a);
+            }
+
+
+                if (a >= 10) {
+                    while (a != 0) {
+                        c = c + a % 10;
+                        a = a / 10;
+                    }
+                    System.out.println("summ3 = " + c);
+                }
+
+
+
+
+
+        } else System.out.println ("it`s not a telephone number");
     }
 }

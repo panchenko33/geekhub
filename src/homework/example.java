@@ -17,18 +17,18 @@ public class example {
                 b = b + i % 10;
                 i = i / 10;
             }
-            if (b == 1) System.out.println("summ = one");
-            if (b == 2) System.out.println("summ = two");
-            if (b == 3) System.out.println("summ = three");
-            if ( 10 > b && b > 3 ) System.out.println("summ1 = " + b);
+            if (b == 1) System.out.println("sum = one");
+            if (b == 2) System.out.println("sum = two");
+            if (b == 3) System.out.println("sum = three");
+            if ( 10 > b && b > 3 ) System.out.println("sum1 = " + b);
 
             if (b >= 10) {
-                System.out.println("summ1 = " + b);
+                System.out.println("sum1 = " + b);
                 while (b != 0) {
                     a = a + b % 10;
                     b = b / 10;
                 }
-                System.out.println("summ2 = " + a);
+                System.out.println("sum2 = " + a);
             }
 
 
@@ -37,7 +37,7 @@ public class example {
                         c = c + a % 10;
                         a = a / 10;
                     }
-                    System.out.println("summ3 = " + c);
+                    System.out.println("sum3 = " + c);
                 }
 
 

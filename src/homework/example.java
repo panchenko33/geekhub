@@ -20,7 +20,8 @@ public class example {
             if (b == 1) System.out.println("sum = one");
             if (b == 2) System.out.println("sum = two");
             if (b == 3) System.out.println("sum = three");
-            if ( 10 > b && b > 3 ) System.out.println("sum1 = " + b);
+            if (b == 4) System.out.println("sum = four");
+            if ( 10 > b && b > 4 ) System.out.println("sum1 = " + b);
 
             if (b >= 10) {
                 System.out.println("sum1 = " + b);

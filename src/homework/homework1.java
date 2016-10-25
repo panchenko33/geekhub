@@ -15,20 +15,12 @@ public class homework1 {
 
         if (scn.hasNextInt()) {
             num = scn.nextInt();
-            int m;
             int size = 0;
             while (num != 0) {
                 b = b + num % 10;
                 num = num / 10;
                 size++;
             }
-            int[] arr = new int[size];
-            for (m = 0; m < arr.length; m++) {
-                b = b + num % 10;
-                arr[m] = b;
-                num = num / 10;
-            }
-
             if (size != 9){
                 System.out.println("you enter an incorrect telephone number");
             }
@@ -51,7 +43,9 @@ public class homework1 {
                     b = b / 10;
                 }
                 result = " "+ a;
-            } else if (a >= 10) {
+            }
+            if (a >= 10) {
+                System.out.println("sum2 = " + a);
                 while (a != 0) {
                     c = c + a % 10;
                     a = a / 10;

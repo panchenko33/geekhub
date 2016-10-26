@@ -3,6 +3,9 @@ package homework;
 import java.util.Scanner;
 
 public class homework1 {
+    /*
+    задача на подсчет суммы номера телефона =)
+     */
     public static void main(String[] args) {
 
         Scanner scn = new Scanner(System.in);

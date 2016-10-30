@@ -15,7 +15,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter figure");
-        String figure = scanner.nextLine();
+        Figure figure = Figure.valueOf(scanner.nextLine());
 
         switch (figure) {
             case CIRCLE:
@@ -34,6 +34,7 @@ public class Main {
 
         resultShape.input();
 
-        System.out.println("area =" + resultShape.calculateArea() + "perimeter =" + resultShape.calculatePerimeter() );
+        System.out.println("area =" + resultShape.calculateArea() +
+                "perimeter =" + resultShape.calculatePerimeter() );
     }
 }

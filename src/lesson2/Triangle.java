@@ -11,20 +11,18 @@ public class Triangle implements Shape {
     private double c;
 
     @Override
-    public double calculateArea() {
+    public void calculateArea() {
         double halfp = a/2 + b/2 + c/2;
         double area = Math.sqrt(halfp * (halfp - a) * (halfp -b) * (halfp - c));
-        return halfp;
     }
 
     @Override
-    public double calculatePerimeter() {
+    public void calculatePerimeter() {
         double perimeter = a + b + c;
-        return perimeter;
     }
 
     @Override
-    public Shape input() {
+    public void input() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter first side of Triangle");
         double a = scanner.nextDouble();
@@ -32,6 +30,5 @@ public class Triangle implements Shape {
         double b = scanner.nextDouble();
         System.out.println("enter third side of Triangle");
         double c = scanner.nextDouble();
-        return null;
     }
 }

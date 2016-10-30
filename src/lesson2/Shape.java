@@ -5,9 +5,9 @@ package lesson2;
  */
 public interface Shape {
 
-    public double calculateArea();
+    public void calculateArea();
 
-    public double calculatePerimeter();
+    public void calculatePerimeter();
 
-    public Shape input();
+    public void input();
 }

@@ -10,24 +10,21 @@ public class Rectangle implements Shape {
     private double b;
 
     @Override
-    public double calculateArea() {
+    public void calculateArea() {
         double area = a * b;
-        return area;
     }
 
     @Override
-    public double calculatePerimeter() {
+    public void calculatePerimeter() {
         double perimeter = a + a + b + b;
-        return perimeter;
     }
 
     @Override
-    public Shape input() {
+    public void input() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter first side of rectangle");
         double a = scanner.nextDouble();
         System.out.println("enter second side of rectangle");
         double b = scanner.nextDouble();
-        return null;
     }
 }

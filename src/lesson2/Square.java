@@ -9,22 +9,19 @@ public class Square implements Shape {
     private double a;
 
     @Override
-    public double calculateArea() {
+    public void calculateArea() {
         double area = a * a;
-        return area;
     }
 
     @Override
-    public double calculatePerimeter() {
+    public void calculatePerimeter() {
         double perimeter = a * 4;
-        return perimeter;
     }
 
     @Override
-    public Shape input() {
+    public void input() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter first side of rectangle");
         double a = scanner.nextDouble();
-        return null;
     }
 }

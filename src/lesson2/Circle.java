@@ -9,22 +9,19 @@ public class Circle implements Shape {
     private double r;
 
     @Override
-    public double calculateArea() {
+    public void calculateArea() {
         double area = Math.PI * (r * r);
-        return area;
     }
 
     @Override
-    public double calculatePerimeter() {
+    public void calculatePerimeter() {
         double perimeter = Math.PI * 2 * r;
-        return perimeter;
     }
 
     @Override
-    public Shape input() {
+    public void input() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter radius of circle");
         double r = scanner.nextDouble();
-        return null;
     }
 }

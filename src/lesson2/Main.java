@@ -11,11 +11,11 @@ public class Main {
 
     public static void main(String args[]){
 
-        Shape resultShape = null;
+        Shape resultShape;
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("enter figure: CIRCLE, TRIANGLE, SQUARE or RECTANGLE");
-        Figure figure = Figure.valueOf(scanner.nextLine());
+        System.out.println("enter figure");
+        String figure = scanner.nextLine();
 
         switch (figure) {
             case CIRCLE:
@@ -32,12 +32,8 @@ public class Main {
                 break;
         }
 
-        resultShape = resultShape.input();
+        resultShape.input();
 
-        double area = resultShape.calculateArea();
-        double perimeter = resultShape.calculatePerimeter();
-
-        System.out.println("area = " + area + "perimeter = " + perimeter);
+        System.out.println("area =" + resultShape.calculateArea() + "perimeter =" + resultShape.calculatePerimeter() );
     }
 }
-

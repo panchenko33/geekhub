@@ -14,27 +14,29 @@ public class Main {
         Shape resultShape;
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("enter figure");
-        Figure figure = Figure.valueOf(scanner.nextLine());
+        System.out.println("enter figure : Circle, Triangle, Square or Rectangle");
+        String figure = scanner.nextLine();
 
         switch (figure) {
-            case CIRCLE:
+            case "Circle":
                 resultShape = new Circle();
                 break;
-            case TRIANGLE:
+            case "Triangle":
                 resultShape = new Triangle();
                 break;
-            case SQUARE:
+            case "Square":
                 resultShape = new Square();
                 break;
-            case RECTANGLE:
+            case "Rectangle":
                 resultShape = new Rectangle();
                 break;
+            default:
+                resultShape = new Circle();
         }
 
         resultShape.input();
 
-        System.out.println("area =" + resultShape.calculateArea() +
-                "perimeter =" + resultShape.calculatePerimeter() );
+        System.out.println("area = " + resultShape.calculateArea() +
+                " perimeter = " + resultShape.calculatePerimeter() );
     }
 }

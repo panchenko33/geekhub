@@ -9,13 +9,15 @@ public class Square implements Shape {
     private double a;
 
     @Override
-    public void calculateArea() {
+    public double calculateArea() {
         double area = a * a;
+        return area;
     }
 
     @Override
-    public void calculatePerimeter() {
+    public double calculatePerimeter() {
         double perimeter = a * 4;
+        return perimeter;
     }
 
     @Override

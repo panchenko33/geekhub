@@ -10,13 +10,15 @@ public class Rectangle implements Shape {
     private double b;
 
     @Override
-    public void calculateArea() {
+    public double calculateArea() {
         double area = a * b;
+        return area;
     }
 
     @Override
-    public void calculatePerimeter() {
+    public double calculatePerimeter() {
         double perimeter = a + a + b + b;
+        return perimeter;
     }
 
     @Override

@@ -11,14 +11,16 @@ public class Triangle implements Shape {
     private double c;
 
     @Override
-    public void calculateArea() {
+    public double calculateArea() {
         double halfp = a/2 + b/2 + c/2;
         double area = Math.sqrt(halfp * (halfp - a) * (halfp -b) * (halfp - c));
+        return area;
     }
 
     @Override
-    public void calculatePerimeter() {
+    public double calculatePerimeter() {
         double perimeter = a + b + c;
+        return perimeter;
     }
 
     @Override

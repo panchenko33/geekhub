@@ -27,10 +27,10 @@ public class Triangle implements Shape {
     public void input() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter first side of Triangle");
-        double a = scanner.nextDouble();
+        a = scanner.nextDouble();
         System.out.println("enter second side of Triangle");
-        double b = scanner.nextDouble();
+        b = scanner.nextDouble();
         System.out.println("enter third side of Triangle");
-        double c = scanner.nextDouble();
+        c = scanner.nextDouble();
     }
 }

@@ -25,8 +25,8 @@ public class Rectangle implements Shape {
     public void input() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter first side of rectangle");
-        double a = scanner.nextDouble();
+        a = scanner.nextDouble();
         System.out.println("enter second side of rectangle");
-        double b = scanner.nextDouble();
+        b = scanner.nextDouble();
     }
 }

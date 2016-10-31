@@ -24,7 +24,7 @@ public class Circle implements Shape {
     public void input() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("enter radius of circle");
-        double r = scanner.nextDouble();
+        r = scanner.nextDouble();
     }
 
 }

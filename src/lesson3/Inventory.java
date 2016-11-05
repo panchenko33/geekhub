@@ -3,7 +3,6 @@ package lesson3;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 /**
  * Created by panchenko_33 on 05.11.2016.
@@ -15,44 +14,28 @@ public class Inventory {
         int sum = 0;
         String name = "";
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("please choice what you need : 1 - info about all products;" +
-                "2 - Beer; 3 - Water; 4 - Juice; ");
-        int enteredValue = scanner.nextInt();
+        List<Product> product = new ArrayList<Product>();
 
-        switch (enteredValue) {
-            case 1:
-                resultShape = new Circle();
-                break;
-            case 2:
-                resultShape = new Triangle();
-                break;
-            case 3:
-                resultShape = new Square();
-                break;
-            case 4:
-                resultShape = new Rectangle();
-                break;
-            default:
-                resultShape = new Circle();
-        }
+        product.add(new Beer("Bud ", 24, 45));
+        product.add(new Beer("Dunkel ", 14, 15));
+        product.add(new Beer("Weissburg ", 21, 75));
+        product.add(new Beer("Carling ", 13, 28));
 
-        resultShape.input();
+        product.add(new Juice("Rich ", 19, 41));
+        product.add(new Juice("Sandora ", 19, 41));
+        product.add(new Juice("Jaffa ", 19, 41));
 
-        List<Product> brand = new ArrayList<Product>();
+        product.add(new Water("Coca-cola ", 16, 34));
+        product.add(new Water("Fanta ", 16, 34));
+        product.add(new Water("Sprite ", 16, 34));
 
-        brand.add(new Beer("Bud ", 24, 45));
-        brand.add(new Beer("Dunkel ", 14, 15));
-        brand.add(new Beer("Weissburg ", 21, 75));
-        brand.add(new Beer("Carling ", 13, 28));
-
-        for (int i = 0; i < brand.size(); i++) {
-            quantity = quantity + brand.get(i).quantity;
-            sum = sum + brand.get(i).price;
-            name = name + brand.get(i).name;
+        for (int i = 0; i < product.size(); i++) {
+            quantity = quantity + product.get(i).quantity;
+            sum = sum + product.get(i).price * product.get(i).quantity;
+            name = name + product.get(i).name;
         }
         System.out.println("We have products of such companies as " + name );
-        System.out.println("The quantity of products is " + quantity);
+        System.out.println("The quantity of products is  " + quantity);
         System.out.println("The total price of products is " + sum + " hrn");
     }
 }

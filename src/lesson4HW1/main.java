@@ -13,7 +13,7 @@ public class main implements TaskManager {
         this.taskByDate = new HashMap<>();
     }
 
-    public Map<LocalDateTime, Task> getTasksByDate() {
+    public Map<LocalDateTime, Task> getTaskByDate() {
         return taskByDate;
     }
 

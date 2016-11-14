@@ -27,4 +27,3 @@ public class Inventory {
         return products;
     }
 }
-

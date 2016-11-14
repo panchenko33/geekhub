@@ -5,9 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * Created by panchenko_33 on 05.11.2016.
- */
+
 public class Main {
     public static void main(String args[]) {
 

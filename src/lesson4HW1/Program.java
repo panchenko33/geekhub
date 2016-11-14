@@ -38,16 +38,29 @@ public class Program implements TaskManager {
 
     @Override
     public Map<String, List<Task>> getTasksByCategories(String... categories) {
-        return null;
+        Map<Set<String>, Set<Map.Entry<LocalDateTime, Task>>> TasksByCategories = new HashMap<>();
+        for (Map.Entry<LocalDateTime, Task> taskByCategory : taskByDate.entrySet()) {
+            TasksByCategories.put(getCategories(), taskByDate.entrySet());
+        }
+        return getTasksByCategories();
     }
 
     @Override
     public List<Task> getTasksByCategory(String category) {
-        return null;
+        List<Task> TaskByCategory = new ArrayList<>();
+        for (Map.Entry<LocalDateTime, Task> taskByCategories : taskByDate.entrySet()) {
+            TaskByCategory.add((Task) getTasksByCategories());
+        }
+        return getTasksByCategory();
     }
+
 
     @Override
     public List<Task> getTasksForToday() {
-        return null;
+        List<Map<String, List<Task>>> taskForToday = new ArrayList<>();
+        for (Map.Entry<LocalDateTime, Task> taskByCategories : taskByDate.entrySet()) {
+            taskForToday.add(getTasksByCategories());
+        }
+        return getTasksForToday();
     }
 }

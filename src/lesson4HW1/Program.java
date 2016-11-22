@@ -46,16 +46,6 @@ public class Program implements TaskManager {
     }
 
     @Override
-    public List<Task> getTasksByCategory(String category) {
-        List<Task> TaskByCategory = new ArrayList<>();
-        for (Map.Entry<LocalDateTime, Task> taskByCategories : taskByDate.entrySet()) {
-            TaskByCategory.add((Task) getTasksByCategories());
-        }
-        return getTasksByCategory();
-    }
-
-
-    @Override
     public List<Task> getTasksForToday() {
         List<Map<String, List<Task>>> taskForToday = new ArrayList<>();
         for (Map.Entry<LocalDateTime, Task> taskByCategories : taskByDate.entrySet()) {

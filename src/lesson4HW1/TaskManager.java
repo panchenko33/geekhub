@@ -18,8 +18,6 @@ public interface TaskManager {
 
     Map<String, List<Task>> getTasksByCategories(String... categories);
 
-    List<Task> getTasksByCategory(String category);
-
     List<Task> getTasksForToday();
 }
 
